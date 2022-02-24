@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>display movies project</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-center m-3 text-white">Trending moives</h2>
+    </header>
+    <div id="outbox">
+      <div id="sidebar" class="bg-dark">
+        <div class="lyear bg-dark"></div>
+        <div  id="links" class="bg-dark">
+          <a name="now_playing"  class="medaiType">Now playing</a>
+          <a name="top_rated" class="medaiType" >Top Rated</a>
+          <a name="popular" class="medaiType" >Popular</a>
+          <a name="upcoming" class="medaiType" >Upcoming</a>
+          <a  href="#Contact-Us">Contact Us</a>
+         
+        </div>
+      </div>
+
+      <i id="icon" class="fas fa-bars fa-2x"></i>
+      <div class="clear"></div>
+    </div>
+
+    <section class="displayMoves container py-4">
+      <div class="row py-4 justify-content-center">
+        <div class="col-md-6">
+          <input
+            onkeyup="search(this.value)"
+            type="text"
+            placeholder="search...."
+            class="form-control text-light bg-dark"
+          />
+        </div>
+      </div>
+      <div class="row" id="rowDate"></div>
+    </section>
+    <div class="form container py-4" id="Contact-Us">
+      <h3 class="text-white">ContacUs...</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              class="form-control bg-dark text-light"
+              type="text"
+              id="name"
+              placeholder="Enter your Name"
+            />
+            <div class="alert alert-danger" id="namealert" role="alert">
+              entre valid name start with upper letter
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              class="form-control bg-dark text-light"
+              type="text"
+              id="email"
+              placeholder="Enter Email"
+            />
+            <div class="alert alert-danger" id="emailalert" role="alert">
+              entre valid email same:Examp@gmail.com
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              class="form-control bg-dark text-light"
+              id="phone"
+              placeholder="Enter phone"
+            />
+            <div class="alert alert-danger" id="phonealert" role="alert">
+              entre valid phone
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              class="form-control bg-dark text-light"
+              type="number"
+              id="age"
+              placeholder="Enter Age"
+            />
+            <div class="alert alert-danger" id="agealert" role="alert">
+              entre valid age
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              class="form-control bg-dark text-light"
+              type="password"
+              id="password"
+              placeholder="Enter password"
+            />
+            <div class="alert alert-danger" id="passwordalert" role="alert">
+              entre valid password start with upper letter and 5 numbar same
+              A12345
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              class="form-control bg-dark text-light"
+              type="password"
+              id="repassword"
+              placeholder="Enter repassword"
+            />
+            <div class="alert alert-danger" id="repasswordalert" role="alert">
+              entre valid repassword
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        type="submit"
+        onclick="usersInfo()"
+        id="submitBtn"
+        class="btn btn-outline-danger mx-3"
+      >
+        Submit
+      </button>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

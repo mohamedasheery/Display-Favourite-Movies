@@ -43,7 +43,8 @@ body{
 #icon{
   
     float: left;
-  margin: 10px;
+  margin: 8px;
+  cursor: pointer;
 
 
 }
@@ -56,6 +57,7 @@ body{
     color:#fff;
     font-size: 22px;
     margin: 10px;
+    cursor: pointer;
 }
 #links{
 width: 100%;
@@ -83,4 +85,8 @@ left: 0;
     bottom:0px;
     right:0px;
     z-index: 1111;
+   
+}
+.item{
+    cursor: pointer;
 }

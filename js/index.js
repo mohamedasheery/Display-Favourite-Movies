@@ -16,7 +16,7 @@ let links = document.querySelectorAll(".medaiType");
 
 
 for (i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function (e) {
+  links[i].addEventListener("click", function (e) { 
     
     let medaiType = e.target.name;
     getData(medaiType)
@@ -44,7 +44,7 @@ function displayMovies() {
   let temp = "";
   for (let i = 0; i < moviesData.length; i++) {
     //  let myimg = https://api.themoviedb.org/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg
-    temp += `   <div class="col-md-4">
+    temp += `   <div class="col-md-4 col-sm-6">
         <div id="itmes" class="item text-center position-relative " >
           <img src="https://image.tmdb.org/t/p/w500${moviesData[i].poster_path}"class="img-fluid rounded alt="not found">
           <div class="contant ">
@@ -208,4 +208,7 @@ function validtionRepassword() {
     alertRepassword.style.display = "block";
     return false;
   }
+}
+function goToTop(){
+  window.scrollTo(0,0)
 }
